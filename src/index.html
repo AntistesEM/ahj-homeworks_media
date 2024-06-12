@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="container-block">
+      <!-- <div class="wrap-block">
+        <span class="date">15/03/19 08/40</span>
+        <audio class="audio" controls></audio>
+        <video class="video" controls></video>
+        <span class="coordinates">[51.50851, -0.12572]</span>
+      </div> -->
+    </div>
+    <div class="input-container">
+      <input type="text" class="input-text" />
+      <div class="icon-container">
+        <div class="icon microphone"></div>
+        <div class="icon camera"></div>
+      </div>
+      <div class="control-container">
+        <div class="icon ok"></div>
+        <span class="timer">00:00</span>
+        <div class="icon cancel"></div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="modal-background">
+    <div class="modal">
+      <div class="modal-content">
+        <h5 class="title">Что-то пошло не так</h5>
+        <p class="modal-text">
+          К сожалению, нам не удалось определить ваше местоположение, пожалуйста, дайте разрешение на использование геолокации, либо введите координаты вручную.
+        </p>
+        <div class="wrap-modal-input">
+          <label for="modal-input">Широта и долгота через запятую</label>
+          <input type="text" name="" id="modal-input" class="modal-input">
+        </div>
+      </div>
+      <div class="modal-control">
+        <button type="button" class="btn-cancel">Отмена</button>
+        <button type="button" class="btn-ok">ОК</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

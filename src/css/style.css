@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+}
+
+.conteiner{
+  margin: auto;
+  /* padding: 5px 0; */
+  /* position: relative; */
+  width: 450px;
+  height: 600px;
+  /* max-height: 600px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  /* pointer-events: none */
+}
+
+/* .input-text{
+  width: 449px;
+  height: 32px;
+  padding: 5px;
+  position: absolute;
+  bottom: 55px;
+} */
+
+.container-block{
+  overflow: auto;
+}
+
+.wrap-block{
+  width: 90%;
+  padding: 10px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.date {
+  margin-left: auto;
+}
+
+.text,
+.coordinates {
+  margin-right: auto;
+}
+
+.modal-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* z-index: 999; */
+}
+
+.modal { 
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 1); 
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex; 
+  flex-direction: column;
+}
+
+.modal-input{
+  width: 100%;
+  height: 32px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.modal-control {
+  margin-left: auto;
+}
+
+.input-container{
+  background-color:blue;
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+  /* height: 30px; */
+  position: relative;
+}
+
+.input-text {
+  padding-right: 110px;
+  width: 100%;
+  height: 40px;
+}
+
+.icon-container{
+  display: flex; /* flex */
+  /* height: 20px; */
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-50%, 50%);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.microphone{
+  background-image: url("../img/mic-microphone-icon.png");
+}
+
+.camera{
+  background-image: url("../img/webcam-icon.png");
+  margin-left: 10px;
+}
+
+.control-container{
+  display: none; /* flex */
+  /* height: 20px; */
+  position: absolute;
+  right: -30px;
+  top: 0;
+  transform: translate(-50%, 50%);
+}
+
+.ok{
+  background-image: url("../img/ok.png");
+  margin-right: 10px;
+}
+
+.cancel{
+  background-image: url("../img/cancel.png");
+  margin-left: 10px;
+}
